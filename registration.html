@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="name" content="Jianchuan Li">
+    <meta name="email" content="li000681@algongquinlive.com">
+    <!-- replace with your meta-data -->
+
+    <title>Fluffy Friends Cat Daycare</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img  src="images/fluffylogo(300X300).png" alt="happy cat logo">
+        <img id="coname" src="images/companyname(1113X300).jpg" alt="fluffy friends cat daycare">
+    </header>       
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="staff.html">STAFF</a>
+        <a href="schedule.html">SCHEDULE</a>
+        <a href="registration.html">REGISTRATION</a>
+        <a href="registration.html#contact">CONTACT</a>
+        <a href="project.html">PROJECT</a>
+    </nav>
+
+    <main>
+        
+        <h2>Cat Intake Form</h2>
+        <div class="sticky" >
+            <img  src="images/sleepingcats.jpg" alt="cute cat"> 
+        </div> 
+        <section >
+            <form  name="registration" action="" method="get">
+                <div id="form">
+                <div>
+                    <label for="name">Name of Cat </label>
+                    <input type="text" id="name" name="name"><br>
+                    <span class="alert" id = 'nameError'></span>
+                </div>
+                <div>
+                    <label for="age">Age of Cat </label>
+                    <input type="number" id="age" name="age">
+                </div>
+                <div id="temperament">
+                    <div>
+                        Temperament of Cat
+                    </div>
+                    
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <input type="radio" id="title_1" name="title" value="Friendly" checked="checked">
+                                <label for="title_1">Friendly</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="title_2" name="title" value="Sleepy" >
+                                <label for="title_2">Sleepy</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="title_3" name="title" value="Independent">
+                                <label for="title_3">Independent</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="title_4" name="title" value="Terrirotial">
+                                <label for="title_4">Terrirotial</label>
+                            </li>
+                        </ul>
+                        <div class="desTerrirotial">
+                            <label for="desTerrirotial">Describe Territorial</label>
+                            <input type="text" id="desTerrirotial" name="desTerrirotial">
+                        </div>
+                        
+                    </fieldset>
+                </div>
+                <div class="dayNeeded">
+                    <div>Days Needed</div>
+                    <div id="dayNeeded">
+                        <div>
+                            <label for="mon"> Mon.</label>
+                            <input type="checkbox" id="mon" name="mon" value="mon">
+                        </div>
+                        <div>
+                            <label for="tue"> Tue.</label>
+                            <input type="checkbox" id="tue" name="tue" value="tue">
+                        </div>
+                        <div>
+                            <label for="wed"> Wed.</label>
+                            <input type="checkbox" id="wed" name="wed" value="wed">
+                        </div>
+                        <div>
+                            <label for="thu"> Thu.</label>
+                            <input type="checkbox" id="thu" name="thu" value="thu">
+                        </div>
+                        <div>
+                            <label for="fri"> Fri.</label>
+                            <input type="checkbox" id="fri" name="fri" value="fri">
+                        </div>
+                        <div>
+                            <label for="sat"> Sat.</label>
+                            <input type="checkbox" id="sat" name="sat" value="sat" disabled>
+                        </div>
+                        <div>
+                            <label for="sun"> Sun.</label>
+                            <input type="checkbox" id="sun" name="sun" value="sun" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="time">
+                    <div>
+                        <label for="timeArrive"> Time Arrive</label>
+                        <input list="timeOption" type="text" id="timeArrive" name="timeArrive" >
+                        <datalist id="timeOption">
+                            <option value="6:00AM"></option>
+                            <option value="6:30AM"></option>
+                            <option value="7:00AM"></option>
+                            <option value="7:30AM"></option>
+                            <option value="8:00AM"></option>
+                            <option value="8:30AM"></option>
+                            <option value="9:00AM"></option>
+                            <option value="9:30AM"></option>
+                            <option value="10:00AM"></option>
+                            <option value="10:30AM"></option>
+                            <option value="11:00AM"></option>
+                            <option value="11:30AM"></option>
+                            <option value="12:00AM"></option>
+                        </datalist>
+                        <div class="alert" id = 'timeError'></div>
+                    </div>
+                    <div>
+                        <label for="timeLeave"> Time Leave</label>
+                        <input list="timeOption1" type="text" id="timeLeave" name="timeLeave" >
+                        <datalist id="timeOption1">
+                            <option value="10:00AM"></option>
+                            <option value="10:30AM"></option>
+                            <option value="11:00AM"></option>
+                            <option value="11:30AM"></option>
+                            <option value="12:00PM"></option>
+                            <option value="12:30PM"></option>
+                            <option value="1:00PM"></option>
+                            <option value="1:30PM"></option>
+                            <option value="2:00PM"></option>
+                            <option value="2:30PM"></option>
+                            <option value="3:00PM"></option>
+                            <option value="3:30PM"></option>
+                            <option value="4:00PM"></option>
+                            <option value="4:30PM"></option>
+                            <option value="5:00PM"></option>
+                            <option value="5:30PM"></option>
+                            <option value="6:00PM"></option>
+                        </datalist>
+                        
+                    </div>
+                </div>
+                    
+                <div class="spray">
+                    <input type="checkbox" id="spray" name="spray" value="spray">
+                    <label for="spray"> Cat spayed/neutered</label>
+                </div>
+                <div class="diet">
+                    <div class="di">
+                        <input type="checkbox" id="diet" name="diet" value="diet">
+                        <label for="diet"> Special Diet</label>
+                    </div>
+                    <div class="desDiet">
+                        <label for="desDiet">Describe Diet </label>
+                        <input type="text" id="desDiet" name="desDiet">
+                    </div>
+                </div>
+                
+                
+                <div class="contact1">
+                    <div>
+                        <label for="owerName">Owner’s Name</label>
+                        <input type="text" id="owerName" name="owerName"><br>
+                        <span class="alert" id = 'owerNameError'></span>
+                    </div>
+                    <div>
+                        <label for="daytimePhone">Daytime Phone</label>
+                        <input type="text" id="daytimePhone" name="daytimePhone" placeholder="(123)456-7890" ><br>
+                        <span class="alert" id = 'daytimePhoneError'></span>
+                    </div>
+                    <div>
+                        <label for="cellPhone">Cell Phone</label>
+                        <input type="text" id="cellPhone" name="cellPhone" placeholder="(123)456-7890" ><br>
+                        <span class="alert" id = 'cellPhoneError'></span>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+                <div class="contact2">
+                    <div>
+                        <label for="emergencyName">Emergency Contact Name</label>
+                        <input type="text" id="emergencyName" name="emergencyName"><br>
+                        <span class="alert" id = 'emergencyNameError'></span>
+                    </div>
+                    
+                    <div>
+                        <label for="contactPhone">Contact Phone</label>
+                        <input type="text" id="contactPhone" name="contactPhone" placeholder="(123)456-7890"><br>
+                        <span class="alert" id = 'contactPhoneError'></span>
+                    </div>
+                </div>
+                
+                
+                       
+                
+                <div class="sub" >
+                    <input id="submit" type="submit" value="Submit">
+                </div>
+            </div>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <img src="images/PetDiversityPlusLogo.png" alt="pet diversity plus logo">
+        <img src="images/BBBcertified.png" alt="BBB certified">
+        <address>
+            123 Fluffy Street<br>
+            Ottawa, Ontario
+        </address>
+            (613) 123-CATS<br>
+            <a href="mailto:fluffyfriends@catdaycare.ca?subject=inquiry%20from%20website">
+                fluffyfriends@catdaycare.ca</a>                 
+    </footer>
+</body>
+</html>

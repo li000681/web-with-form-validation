@@ -1,0 +1,185 @@
+#coname{
+    position: absolute;
+}
+.rightfloater{
+    float: right;
+    padding: 0 0 20px 20px;
+}
+.leftfloater{
+    float: left;
+    padding: 0 20px 20px 0;
+}
+nav, footer, nav a, footer a {
+    background-color: #133854;
+    color: white;
+    font-size: 18pt;
+}
+
+
+nav {
+    text-align: left;
+    padding: 10px;
+}     
+
+section {
+    font-size: 20pt;
+}
+
+section img {
+    height: 200px;
+}
+
+footer {
+    text-align: right;
+    margin-top: 1em;
+    padding: 10px;
+}
+
+address {
+    font-style: normal;
+}
+
+fieldset ul{
+    
+    margin-left: -50px;
+    margin-top: -10px;
+}
+#submit{
+    text-align: center;
+    border-radius: 5px;
+}
+#contact address{
+    text-align: center;
+}
+
+footer img{
+    height: 80px;
+    padding-right: 10px;
+    float: left;
+}
+
+
+#list{
+    margin: auto;
+    width: 600px;
+    
+}
+.halfSide{
+    width: 50%;
+    float: left;
+}
+#step{
+    clear: both;
+}
+li{
+    list-style: none;
+}
+label{
+    display: block;
+    
+}
+
+.sticky{
+    position: sticky;
+    top: 0px; 
+    right: 0px;
+     
+}
+.sticky img{
+    width: 200px;
+    height: 200px;
+    float: right;
+    
+}
+#form {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    gap: 20px;
+    grid-auto-rows: minmax(20px, auto);
+    justify-content:space-between;
+    
+    
+}
+
+.desDiet{
+    display: none;
+}
+.desTerrirotial{
+    display: none;
+}
+.alert{
+    color: red;
+}
+
+#submit{
+    background-color: blue;
+    color: white;
+    
+}
+.sub{
+    grid-column: 1;
+    grid-row: 7;
+}
+#submit:hover{
+    background-color:  red;
+    font-size: larger;
+}
+#submit:focus{
+    background-color: yellowgreen;
+}
+#dayNeeded{
+    display: flex;
+}
+#temperament{
+    grid-column: 3;
+    grid-row: 1/4;
+    width: 300px;
+}
+#temperament li{
+    display: flex;
+}
+.dayNeeded{
+    grid-column: 1;
+    grid-row: 2;
+}
+#dayNeeded label{
+    font-weight: lighter;
+    font-size: 0.5em;
+}
+.time{
+    grid-column:1;
+    grid-row: 3;
+    display: flex;
+    gap: 10px;
+    justify-content:left
+}
+.time label{
+    width: 70px;
+    font-size: x-small;
+}
+.time input{
+    width: 50px;
+    font-size: xx-small;
+}
+.spray{
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+}
+.diet{
+    grid-column: 1;
+    grid-row: 5;
+}
+.di{
+    display: flex;
+}
+.contact1{
+    grid-column: 1;
+    grid-row: 6;
+}
+.contact2{
+    grid-column: 3;
+    grid-row: 6;
+}
